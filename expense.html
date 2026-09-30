@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Monthly Expense Tracker
+  </title>
+  <link rel="stylesheet" href="styles/expense.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div>
+    <div>
+      Monthly Expenses Calculator </div>
+    <div>
+      <p>Input your expenses below</p>
+    </div>
+    <div class="expense-html">
+      <div class="input-expense-amount">
+        <input class="expense-list js-expense-list" placeholder="Item Spent On" maxlength="30">
+        <div class="js-input-not-there"></div>
+        <input class="amount-spent js-amount-spent " placeholder="Amount Spent" maxlength="15">
+        <div class="js-amount-not-there"></div>
+      </div>
+      <div class="add-div">
+        <button class="add-button js-add-button" onclick="addExpenses()">Add</button>
+      </div>
+      
+    </div>
+
+    <div class="js-expense-list-display grid-html-display"></div>
+
+    <button class="total-button" onclick="totalDisplay()">Total</button>
+    <div class="js-total-display"></div>
+
+  </div>
+  <script src="scripts/expense.js">
+
+  </script>
+</body>
+
+</html>
